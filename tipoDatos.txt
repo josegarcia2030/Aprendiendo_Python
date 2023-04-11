@@ -1,0 +1,19 @@
+4 tipos de datos simples
+===================================
+1.- tipo dato: Es el texto "string" == "cadena"
+    Ejemplos:
+        "string"
+        'string'
+        '''string'''
+        """string"""
+
+2.- tipo de dato: Enteros y flotantes 
+
+    num1 = 1 -> Entero
+    num2 = 4.4 -> Flotante
+
+3.- tipo dato : Booleano
+
+    uno = True
+    dos = False
+
