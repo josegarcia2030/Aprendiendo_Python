@@ -1,4 +1,4 @@
-#creadno una tupla
+#creando una tupla
 datos = {"lucas", "daltos", 1000000}
 #Desempaquetado 
 nombre , apellido, suscriptores = datos

@@ -93,14 +93,38 @@ while cont <= 6:
 
 
 
-sueldo = float(input("Escribe tu sueldo\n"))
+#sueldo = float(input("Escribe tu sueldo\n"))
 
 
 
+def saberSueldo():
+    sueldo = float(input("Escribe el sueldo\n"))
+    return sueldo
+
+def descuentoSueldo(sueldo):
+    descuento = (sueldo * 12.71) / 100
+    return descuento
+
+def sueldoNeto(sueldo, descuento):
+    return sueldo - descuento
+
+def mostrarSueldo(sueldo):
+    print(f'El sueldo es Bs. {sueldo}')
+
+def mostrarDescuento(descuento):
+    print(f'Tu descuento de aportes es de Bs. {descuento}')
+
+def mostrarSueldoNeto(neto):
+    print(f'Tu sueldo neto sera de Bs. {neto}')
 
 
 
-
+sueldo = saberSueldo()
+descuento = descuentoSueldo(sueldo)
+neto = sueldoNeto(sueldo, descuento)
+mostrarSueldo(sueldo)
+mostrarDescuento(descuento)
+mostrarSueldoNeto(neto)
 
 
 
