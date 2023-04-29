@@ -1,7 +1,9 @@
 #
 frutas = ["banana","manzana","ciruela","pera","naranja","granada","durazno"]
-for fruta in frutas:
-    print(fruta)
+
+def bucle(fruta):    
+    for fruta in frutas:
+        print(fruta)
 
 #evitando que se coma una manzana con la sentencia continue
 for fruta in frutas:
@@ -39,7 +41,7 @@ numeros_duplicados_dos = [ n*2 for n in numeros]
 print(numeros_duplicados_dos)
 
 
-
+#bucle(frutas)
 
 
 

@@ -1,7 +1,11 @@
-contador = 0
+
 #mientras que la condicion se cumpla, el bucle se va seguir ejecutando
-while contador < 10:
-    contador += 1
-    print(contador)
+def contador():
+    cont = 0
+    while cont < 10:
+        
+        cont += 1
+        print(cont)
 
 
+#contador()
