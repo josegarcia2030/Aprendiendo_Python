@@ -33,8 +33,8 @@ print(saludo)
 saludamos = f"Hola {nombre} bienvenido"
 print(saludamos)
 
-#operadores de pertenencia (not in )
+# operadores de pertenencia (not in )
 
 texto = "El nombre es muy largo"
-print("nombre" not in texto) #False
-print("El" in texto) #True
+print("nombre" not in texto)  # False
+print("El" in texto)  # True
