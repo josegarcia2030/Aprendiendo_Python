@@ -305,3 +305,24 @@ print(mi_objeto.mi_primer_metodo(5,5))
 
 
 
+'''
+IMPORTANDO PAQUETES: ORDEN Y ORGANIZACION
+'''
+
+#Los "import" deben separarse en diferentes lineas
+
+
+#correcto
+import os
+import sys
+
+
+#incorrecto
+import os, sys
+
+
+#Sin embargo cuando se importen varios elementos de una misma libreria
+#si seria, correcto importarlos en la misma linea
+
+#correcto
+from subprocess import Popen, PIPE
