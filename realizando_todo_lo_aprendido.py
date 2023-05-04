@@ -161,7 +161,63 @@ def init():
 
 
 
-    #operacion_logicos()
+    #BUCLES
+    def mi_bucle():
+        cont = 0
+        while cont < 10:
+            cont += 1
+            print((cont))
+            
+    def crear_mi_bucle():
+        cont = 0
+        lista = []
+        cantidad = int(input\
+            ('Escribe la cantidad de veces que pondras las notas\n'))
+        
+        while cont < cantidad:
+            cont += 1
+            dato = input('Escribe la nota\n')
+            lista.append(dato)
+
+        print(lista)
+
+    #crear 2 listas
+    lista_1 = ['enrique','jose','miguel','luis']
+    lista_2 = ['69246604','77814106','78136195','65041514']
+
+    for l_1, l_2 in zip(lista_1, lista_2):
+        print(f'Nombre : {l_1}\nCelular: {l_2}')
+            #pass 
+
+    def recorrer_dos_listas(list_1, list_2):   
+        pass
+
+
+    lista_a = [1, 2, 3]
+    lista_b = [4, 5, 6]
+
+
+    for tupla in zip(lista_a, lista_b): #obtenemos la tupla en cada iteración
+        print(tupla[0], tupla[1])
+
+    for valor_a, valor_b in zip(lista_a, lista_b): #obtenemos los valores en cada iteración
+        print(valor_a, valor_b)
+
+    recorrer_dos_listas(lista_1, lista_2)    
+    #crear_mi_bucle()
+    #mi_bucle()
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     '''
@@ -171,14 +227,114 @@ def init():
     #1.- Una Lista es una Matriz
     lista_compras_mercado = ["azucar", "carne", "aceite", "cafe"]
     indice = 0
-    print(f'Lista de compras')
 
-    for l in lista_compras_mercado:
+    #print(f'Lista de compras')
+    '''for l in lista_compras_mercado:
         indice += 1 
-        print(f'{indice}.- {l}')
+        print(f'{indice}.- {l}')'''
 
 
     #2.- Las Tuplas == Nose pueden Modificar
+    usuarios = ("rasek2030","peji7","rxH27","mauro27")
+    
+
+
+    def mostrar_mi_lista(lista):
+        indice = 0
+        print("Esta es la lista:\n")
+        for l in lista:
+            indice +=1
+            print(f'{indice}.- {l}')
+
+    #mostrar_mi_lista(lista_compras_mercado)
+
+
+    #3.- Conjunto(Set)
+    #No se puede cambiar los elementos del conjunto
+    #No se puede acceder por indice[i]
+    #No almacena datos duplicados
+
+    mi_conjunto = {"ingeniero de sistemas","abogado","doctor","arquitecto"}
+    #mostrar conjunto
+    #print(mi_conjunto)
+
+
+    #4.- DICCIONARIO
+    #key : value
+    #clave : valor
+
+    mi_diccionario = {
+        'nombres': 'jose enrique',
+        'apellidos': 'garcia flores',
+        'edad': 26,
+        'estudia': False,
+        'trabaja': True,
+        'sueldo': 3562.63
+    }
+
+    nombre = mi_diccionario['nombres'].upper()
+    #print(f'El nombre es {nombre}')
+
+
+
+
+    #DESEMPAQUETADO
+    #TUPLA usuarios
+
+    usuario_1, usuario_2, usuario_3, usuario_4 = usuarios
+
+    def mostrar_dempaquetado():
+        print(usuario_1)
+        print(usuario_2)
+        print(usuario_3)
+        print(usuario_4)    
+
+
+
+    #mostrar_dempaquetado()
+
+
+
+    #crear lista
+    contactos = ["jose","enrique","luis","miguel","mauricio","moy"]
+    cant = len(contactos)
+    num = 0
+    mis_contactos = []
+
+    for c in contactos:
+        num += 1
+        palabra = "contactos_"
+        palabra += str(num)
+        mis_contactos.append(palabra)
+
+    #print(mis_contactos)
+
+
+    #crear una tupla con tuple()
+    tupla = tuple(['dato1','dato2','dato3'])
+    
+    def mostrar_tupla(tupla):
+        for t in tupla:
+            print(t)
+
+
+    #mostrar_tupla(tupla)
+
+    #Crear una lista con list()
+    lista = list(['name1','name2','name2',2030])
+    def mostrar_lista(lista):
+        for l in lista:
+            print(l)
+
+    #mostrar_lista(lista)
+
+
+    #DICCIONARIOS con DICT()
+    diccionario = dict(nombre = 'enrique', apellido = 'garcia', edad = 26)
+     
+    mis_contactos = dict(contacto_1 = "69246604", contacto_2 = "77814106")
+
+
 
 
 

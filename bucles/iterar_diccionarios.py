@@ -7,8 +7,8 @@ diccionario = {
 
 
 for key in diccionario.items():
-    print(key)
-
+    #print(key)
+    pass
 
 for datos in diccionario.items():
     key = datos[0]

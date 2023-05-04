@@ -13,7 +13,8 @@ for num in numeros:
 
 #recorriendo 2 listas con 1 solo for
 for numero,animal in zip(animales_lista, numeros):
-    print(f"El animal es: {numero.capitalize()} y la cantidad que hay es: {animal}")
+    print(f"El animal es: {numero.capitalize()}\
+         y la cantidad que hay es: {animal}")
 
 
 

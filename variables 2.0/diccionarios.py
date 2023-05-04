@@ -1,15 +1,15 @@
 
 #creando diccionarios en dict()
 diccionario = dict(nombre="lucas", apellidos="dalto")
-print(diccionario)
+#print(diccionario)
 
 
 #las listas no pueden ser claves y usamos frozenset para meter conjuntos
 diccionario1 = {("dalto", "lucas"): "jajaja"}
-print(diccionario1)
+#print(diccionario1)
 
 diccionario2= {frozenset(["jose","garcia"]):"rasek2030"}
-print(diccionario2)
+#print(diccionario2)
 
 
 #creando diccionario con fronkeys()
