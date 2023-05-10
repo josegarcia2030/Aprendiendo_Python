@@ -335,6 +335,10 @@ def init():
     mis_contactos = dict(contacto_1 = "69246604", contacto_2 = "77814106")
 
 
+    #Crear Tupla con Tuple()
+    mi_tupla = tuple(['dato1', 'dato2','dato3','dato4','dato5'])
+
+    print(mi_tupla)
 
 
 
